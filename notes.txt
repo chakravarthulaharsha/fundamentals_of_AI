@@ -1,0 +1,56 @@
+Types of Searches: 
+Depth first search (DFS)
+Breath first search (BFS)
+Uniform cost search (UCS)
+Iterative A* Deepening search (IDS)
+------------------------------------------------------------------
+
+DFS:
+
+	tree
+       1
+ |     |     |
+ 2     3     4
+| |   | |   | |
+5 6   7 8   9 10
+
+search order = {1,2,5,6,3,7,8,4,9,10}
+
+Memory:
+	Suppose d is the max depth of search o(d)
+Time: 
+	O(b^d) b= branching factor
+Completeness:
+	Does it finds a soln if it exists
+	- Yes
+	Is it optimal
+	- No
+
+Application:
+-For very large graphs that cannot be stored in memory (O(b) versus O(b^d) for A*)
+-Find connected components
+- Good for topology sorting
+------------------------------------------------------------------------------------
+BFS:
+
+	tree
+       1
+ |     |     |
+ 2     3     4
+| |   | |   | |
+5 6   7 8   9 10
+
+search order = {1,2,3,4,5,6,7,8,9,10}
+
+Memory :
+O(b^d)
+Time :
+O(b^d)
+- Completeness
+	- Does it finds a soln if it exists
+		- Yes
+- Is it optimal
+	- if all paths are having the same cost, Yes
+
+
+Major qns from 2nd half
